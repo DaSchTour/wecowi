@@ -28,4 +28,3 @@ $wgHooks['ParserGetVariableValueSwitch'][] = 'WeCoWiHooks::myVars';
 $wgHooks['SkinBuildSidebar'][] = 'WeCoWiHooks::SocialSidebar';
 $wgHooks['BeforePageDisplay'][] = 'WeCoWiHooks::SocialSidebarScripts';
 $wgHooks['MagicWordwgVariableIDs'][] = 'WeCoWiHooks::wfMyDeclareVarIds';
-$wgHooks['SkinAfterBottomScripts'][] = 'WeCoWiHooks::PiwikSetup';
