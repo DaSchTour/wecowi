@@ -16,8 +16,16 @@ $wgExtensionMessagesFiles['WeCoWi'] = $dir . '/WeCoWi.i18n.magic.php';
 
 $wgAutoloadClasses['WeCoWiHooks'] = "$dir/WeCoWi.hooks.php";
 
+$wgPiwikIDSite = "";
+$wgPiwikURL = "";
+$wgPiwikIgnoreSysops = true;
+$wgPiwikIgnoreBots = true;
+$wgPiwikCustomJS = "";
+$wgPiwikUsePageTitle = false;
+$wgPiwikActionName = "";
+
 $wgHooks['ParserGetVariableValueSwitch'][] = 'WeCoWiHooks::myVars'; 
 $wgHooks['SkinBuildSidebar'][] = 'WeCoWiHooks::SocialSidebar';
 $wgHooks['BeforePageDisplay'][] = 'WeCoWiHooks::SocialSidebarScripts';
 $wgHooks['MagicWordwgVariableIDs'][] = 'WeCoWiHooks::wfMyDeclareVarIds';
-$wgHooks['SkinAfterBottomScripts'][] = 'WeCoWiHooks::addPiwik';
+$wgHooks['SkinAfterBottomScripts'][] = 'WeCoWiHooks::PiwikSetup';
