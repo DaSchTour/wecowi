@@ -33,6 +33,8 @@ class WeCoWiHooks {
 		$out = '';
         $out .= '<ul><li id="twitter"><span class="social">';
 		$out .= '<a href="https://twitter.com/share" class="twitter-share-button" data-via="WeCoWi" data-lang="de">Twittern</a>';	
+        $out .= '</span></li><li id="flattr"><span class="social">';
+        $out .= '<a class="FlattrButton" style="display:none;" rev="flattr;button:compact;" href="http://www.wecowi.de"></a><noscript><a href="http://flattr.com/thing/734946/Web-Community-Wiki" target="_blank"><img src="http://api.flattr.com/button/flattr-badge-large.png" alt="Flattr this" title="Flattr this" border="0" /></a></noscript>';
         $out .= '</span></li><li id="google"><span class="social"><g:plusone size="small"></g:plusone></span></li>';
         $out .= '<li id="facebook"><span class="social"><fb:like send="false" layout="button_count" width="60" show_faces="true"></fb:like></span></li></ul>';
         $bar['Social Networks'] = $out;
@@ -47,6 +49,16 @@ class WeCoWiHooks {
 					  js.src = "//connect.facebook.net/en_US/all.js#xfbml=1";
 					  fjs.parentNode.insertBefore(js, fjs);
 					}(document, "script", "facebook-jssdk"));</script>');
+		$out->addScript("<script type='text/javascript'>
+/* <![CDATA[ */
+    (function() {
+        var s = document.createElement('script'), t = document.getElementsByTagName('script')[0];
+        s.type = 'text/javascript';
+        s.async = true;
+        s.src = 'http://api.flattr.com/js/0.6/load.js?mode=auto';
+        t.parentNode.insertBefore(s, t);
+    })();
+/* ]]> */</script>");
 		$out->addScript( '<script type="text/javascript" src="https://apis.google.com/js/plusone.js">{lang:de} </script>');
 		return true;
 	}
