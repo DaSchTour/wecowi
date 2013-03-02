@@ -36,7 +36,7 @@ class WeCoWiHooks {
         $out .= '</span></li><li id="flattr"><span class="social">';
         $out .= '<a class="FlattrButton" style="display:none;" rev="flattr;button:compact;" href="http://www.wecowi.de"></a><noscript><a href="http://flattr.com/thing/734946/Web-Community-Wiki" target="_blank"><img src="http://api.flattr.com/button/flattr-badge-large.png" alt="Flattr this" title="Flattr this" border="0" /></a></noscript>';
         $out .= '</span></li><li id="google"><span class="social"><g:plusone size="small"></g:plusone></span></li>';
-        $out .= '<li id="facebook"><span class="social"><fb:like send="false" layout="button_count" width="60" show_faces="true"></fb:like></span></li></ul>';
+        $out .= '<li id="facebook"><span class="social"><div class="fb-like" data-send="false" data-layout="button_count" data-width="450" data-show-faces="true" data-font="verdana"></div></span></li></ul>';
         $bar['Social Networks'] = $out;
 		return true;
 	}
