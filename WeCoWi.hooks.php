@@ -31,7 +31,8 @@ class WeCoWiHooks {
 	
 	public function SocialSidebar ($skin, &$bar ) {
 		$out = '';
-        $out .= '<ul><li id="twitter"><span class="social">';
+		$out .= '<ul><li id="buffer"><span class="social"><a href="http://bufferapp.com/add" class="buffer-add-button" data-count="horizontal" >Buffer</a><script type="text/javascript" src="http://static.bufferapp.com/js/button.js"></script>';
+        $out .= '</span></li><li id="twitter"><span class="social">';
 		$out .= '<a href="https://twitter.com/share" class="twitter-share-button" data-via="WeCoWi" data-lang="de">Twittern</a>';	
         $out .= '</span></li><li id="flattr"><span class="social">';
         $out .= '<a class="FlattrButton" style="display:none;" rev="flattr;button:compact;" href="http://www.wecowi.de"></a><noscript><a href="http://flattr.com/thing/734946/Web-Community-Wiki" target="_blank"><img src="http://api.flattr.com/button/flattr-badge-large.png" alt="Flattr this" title="Flattr this" border="0" /></a></noscript>';
